@@ -1,5 +1,5 @@
 import {temporizador} from "./temporizador.js";
-
+import {modoOscuro} from "./darkTheme.js";
 /***********************Botón 1 ----Menú*************************************** */
 
 const d = document,
@@ -18,6 +18,7 @@ const $boton2=d.getElementById("boton2");
 window.addEventListener("scroll",()=>{
   if(window.scrollY>=800){
     $boton2.classList.remove("oculto");
+    console.log( $boton2.classList)
     
   }else{
     $boton2.classList.add("oculto");
@@ -128,3 +129,7 @@ d.addEventListener("keydown", (e) => {
 /***********************cuenta atras************************************* */
 
 d.addEventListener("DOMContentLoaded", temporizador("countdown","txt-countdown",'2023-1-14 8:0:0',"El programador ninja les desea ¡¡¡¡¡SUERTE EN LOS EXÁMENES!!!!"));
+
+/******************modo oscuro************************************************** */
+
+ modoOscuro(".dark-theme-btn","dark-mode");

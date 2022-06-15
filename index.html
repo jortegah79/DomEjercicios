@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-dark>
 <head>
     <meta charset="UTF-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
@@ -8,9 +8,9 @@
     <link href="./css/hamburguesa.css" rel="StyleSheet" />
 </head>
 
-<body>
-    <div id="container" class="container">
-        <h1>EJERCICIOS DEL DOM</h1>
+<body data-dark>
+    <div  id="container" class="container">
+        <h1  >EJERCICIOS DEL DOM</h1>
     </div>
     <nav class="menu cerrado" id="menu">
         <ul id="ul">
@@ -45,16 +45,16 @@
                 <button id="StopAlarm">Detiene Alarma</button>
             </div>
         </article>
-        <hr />
+       
         <article id="juego">
             <h2 id="Movimientos">Panel con movimiento de teclado</h2>
-            <p>Usa los cursores para mover la bola...</p>
+            <p data-dark>Usa los cursores para mover la bola...</p>
             <div id="pizarra">
                 <div id="ball"></div>
             </div>
             
         </article>
-       <hr>
+       
         <article id="temporizador">
             <h2>Temporizador.<br>Quedan...</h2>
             <h3 id="countdown"></h3>
@@ -65,6 +65,7 @@
     <hr>
     <div class="botonDesactivado" id="boton">Menú</div>
     <div class="boton2 oculto" id="boton2">UP</div>
+    <div class=" dark-theme-btn" id="boton3">DARK</div>
     <script src="./js/hamburger.js" type="module"></script>
 </body>
 </html>
