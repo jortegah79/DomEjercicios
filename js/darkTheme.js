@@ -30,18 +30,18 @@ export function modoOscuro(btn, classDark) {
   document.addEventListener("DOMContentLoaded", () => {
    ;
     if (localStorage.getItem("modo") === null) {
-      console.log("null" + localStorage);
+     
       localStorage.setItem("modo", "light");
       lightMode();
     }
     if (localStorage.getItem("modo") === "light") {
       lightMode();
 
-      console.log("light" + localStorage);
+   
     }
     if (localStorage.getItem("modo") === "dark") {
       darkMode();
-      console.log("dark" + localStorage);
+      
     }
   });
 }

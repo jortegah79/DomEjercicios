@@ -69,16 +69,18 @@ p {
 #ul {
     position: relative;
     text-align: center;
-    font-size: 20px;
-    color: rgb(0, 255, 85);
+    font-size: 20px;    
     list-style: none;
 }
 
 li {
     padding: 20px;
 }
+a li{
+    color:#ddd;
+}
 a{
-    color:white;
+    color:blue;
     text-decoration: none;
 }
 a:hover{
@@ -86,8 +88,8 @@ a:hover{
     text-decoration: none;
 }
 li:hover {
-    background: rgb(0, 102, 255);
-    color: rgb(24, 180, 154);
+    background: rgba(200,200,200,0.5);
+    color: #333;
        
 }
 
@@ -99,7 +101,7 @@ li:hover {
 #clock {
     margin-top: 100px;
     height:300px;
-    min-width:500px;
+    min-width:400px;
     width: 40%;
     border: 5px double #555;
     text-align: center;
@@ -208,9 +210,9 @@ article{
     color:var(--second-color);
 }
 
-@media screen and (max-width:1200px) {
-    .boton2{
-        right:12vw;
+@media screen and (max-width:1024px) {
+    #boton2{
+        right:14vw;
     }
     #boton1{
         right:2vw;
@@ -220,6 +222,6 @@ article{
         height:300px;
     }
     article{
-        height:50vh;
+        height:75vh;
     }
 }

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es" data-dark>
+<html data-dark lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
@@ -9,26 +9,38 @@
 </head>
 
 <body data-dark>
-    <div  id="container" class="container">
-        <h1  >EJERCICIOS DEL DOM</h1>
+    <div class="container" id="container">
+        <h1>EJERCICIOS DEL DOM</h1>
     </div>
     <nav class="menu cerrado" id="menu">
         <ul id="ul">
-            <li>
-                <a href="#container">Reloj y Alarma Digitales</a>
-            </li>
-            <li >
-                <a href="#Movimientos">Movimientos</a>
-            </li>
-            <li >
-                <a href="#temporizador">Temporizador</a>
-            </li>
-            <li >
-                <a href="#Movimientos">Movimientos</a>
-            </li>
-            <li >
-                <a href="#Movimientos">Movimientos</a>
-            </li>
+            <a href="#container">
+                <li>Reloj y Alarma Digitales</li>
+            </a>
+            <a href="#Movimientos">
+                <li>Movimientos</li>
+            </a>
+            <a href="#temporizador">
+                <li>Temporizador</li>
+            </a>
+            <a href="#ResponsiveJS">
+                <li>Responsive con Js</li>
+            </a>
+            <a href="#container">
+                <li>Reloj y Alarma Digitales</li>
+            </a>
+            <a href="#container">
+                <li>Reloj y Alarma Digitales</li>
+            </a>
+            <a href="#container">
+                <li>Reloj y Alarma Digitales</li>
+            </a>
+            <a href="#container">
+                <li>Reloj y Alarma Digitales</li>
+            </a>
+            <a href="#container">
+                <li>Reloj y Alarma Digitales</li>
+            </a>
         </ul>
     </nav>
     <main>
@@ -45,27 +57,35 @@
                 <button id="StopAlarm">Detiene Alarma</button>
             </div>
         </article>
-       
+
         <article id="juego">
             <h2 id="Movimientos">Panel con movimiento de teclado</h2>
             <p data-dark>Usa los cursores para mover la bola...</p>
             <div id="pizarra">
                 <div id="ball"></div>
             </div>
-            
         </article>
-       
+
         <article id="temporizador">
-            <h2>Temporizador.<br>Quedan...</h2>
+            <h2>
+                Temporizador.
+                <br />Quedan...
+            </h2>
             <h3 id="countdown"></h3>
-            <h4><span id="txt-countdown"class="grande"></span></h4>
-            
+            <h4>
+                <span class="grande" id="txt-countdown"></span>
+            </h4>
+        </article>
+        <article id="ResponsiveJS">
+            <h2>DISEÑO RESPONSIBLE CON JS</h2>
+            <div id="youtube"></div>
+            <div id="map"></div>
         </article>
     </main>
-    <hr>
+    <hr />
     <div class="botonDesactivado" id="boton">Menú</div>
     <div class="boton2 oculto" id="boton2">UP</div>
-    <div class=" dark-theme-btn" id="boton3">DARK</div>
+    <div class="dark-theme-btn" id="boton3">DARK</div>
     <script src="./js/hamburger.js" type="module"></script>
 </body>
 </html>
