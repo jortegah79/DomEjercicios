@@ -52,12 +52,16 @@ p {
 
 .botonera {
     margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .menu {
     position: fixed;    
-    width: 250px;
-    background-color: rgba(060, 060, 060, 0.8);
+    width:100vw;
+    background-color: rgba(060, 060, 060, 0.93);
     transition: all 0.5s ease;
     transform: translateX(0);
 }
@@ -92,7 +96,17 @@ li:hover {
     color: #333;
        
 }
-
+li:active{
+    background:rgba(150,150,150,0.5);
+    color:red;
+}
+.responsibility{
+    padding:30px;
+    margin-top:20px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
 
 .extendido {
     padding-bottom: 75vh;
@@ -101,7 +115,7 @@ li:hover {
 #clock {
     margin-top: 100px;
     height:300px;
-    min-width:400px;
+    min-width:300px;
     width: 40%;
     border: 5px double #555;
     text-align: center;
@@ -120,18 +134,21 @@ li:hover {
 }
 
 button {
-    margin: 0 5px;
-    padding: 5px;
-    background: #6699dd;
-    color: #222;
+    margin: 10px 10px;
+    padding: 10px;
+    background: #323232;
+    color: var(--second-color);
     font-size: 15px;
     font-weight: bold;
-    box-shadow: 2px 2px 5px 2px #222;
+    box-shadow: 2px 2px 5px 2px #999;
+}
+button:hover{
+    background: #545454;
 }
 
 .activo {
-    background-color: #555;
-    color: #fff;
+    background-color: #a44;
+    color: #ddd;
 }
 
 article{
@@ -209,6 +226,42 @@ article{
     background:var(--main-color);
     color:var(--second-color);
 }
+fieldset{
+    width:300px;
+    margin :0 auto;
+    padding:30px;
+    }
+fieldset input{
+    width:90%;
+    height:30px;
+    font-size:20px;
+}
+.offline,.online{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    padding:1rem;
+    height:300px;
+    font-size:3em;
+    font-weight: bold;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+text-align: center;
+background:#1b5e20;
+color:#fff;
+}
+
+.offline{
+    background:#b71c1c;
+}
+#webcam{
+    padding:10px;
+   
+   
+
+    
+}
 
 @media screen and (max-width:1024px) {
     #boton2{
@@ -223,5 +276,8 @@ article{
     }
     article{
         height:75vh;
+    }
+    .responsibility{
+        flex-direction: column;
     }
 }

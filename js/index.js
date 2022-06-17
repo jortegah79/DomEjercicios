@@ -1,9 +1,15 @@
 import {temporizador} from "./temporizador.js";
 import {modoOscuro} from "./darkTheme.js";
 import responsiveMedia from "./responsives.js";
+import {nueva_ventana,cerrar} from "./responsiveTester.js";
+import userDeviceInfo from "./deteccion_dispositivos.js";
+import connStatus from "./connectionStatus.js";
+import {muestraWebcam,detieneWebcam} from "./webcam.js";
+
 /***********************Botón 1 ----Menú*************************************** */
 
 const d = document,
+w=window,
   $menu = d.getElementById("menu"),  
   $boton = d.getElementById("boton");
 
@@ -139,3 +145,45 @@ d.addEventListener("DOMContentLoaded",()=>{
 /******************modo oscuro************************************************** */
 
  modoOscuro(".dark-theme-btn","dark-mode");
+
+ /**************************Responsive Tester************************************************************************* */
+
+
+ const $uri=d.getElementById("uri-web"),
+ $ancho=d.getElementById("res-x"),
+ $alto=d.getElementById("res-y");
+
+
+ d.addEventListener("click",(e)=>{
+ 
+  e.preventDefault;
+   if(e.target.id==="btn-probe"){
+    console.log(`uri:${$uri.value}<br>
+    ancho: ${$ancho.value}<br>
+    alto:${$alto.value}`);
+    nueva_ventana(`${$uri.value}`,`${$ancho.value}`,`${$alto.value}`);
+   }
+   if(e.target.id==="btn-close"){
+     cerrar();
+   }
+ })
+
+ /*****************************DETECCION DISPOSITIVOS********** */
+ d.addEventListener("DOMContentLoaded",userDeviceInfo("userA"));
+
+
+ /****************************DETECCIÓN DE LA CONEXIÓN************************************************************* */
+  connStatus("estado");
+  /*****************************MOSTRAR LA WEBCAM********************************************** */
+  
+  d.addEventListener("click",(e)=>{
+    if(e.target.id==="play"){
+      muestraWebcam("webcamVideo");
+    }
+    if(e.target.id==="stop"){
+      detieneWebcam("webcamVideo");
+    }
+    
+  })
+
+ 

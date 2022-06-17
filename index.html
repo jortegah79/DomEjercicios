@@ -8,8 +8,9 @@
     <link href="./css/hamburguesa.css" rel="StyleSheet" />
 </head>
 
-<body data-dark>
+<body data-dark><h2 id="conn"></h2>
     <div class="container" id="container">
+        
         <h1>EJERCICIOS DEL DOM</h1>
     </div>
     <nav class="menu cerrado" id="menu">
@@ -26,17 +27,17 @@
             <a href="#ResponsiveJS">
                 <li>Responsive con Js</li>
             </a>
-            <a href="#container">
-                <li>Reloj y Alarma Digitales</li>
+            <a href="#ResponsiveTester">
+                <li>Responsive Tester</li>
             </a>
-            <a href="#container">
-                <li>Reloj y Alarma Digitales</li>
+            <a href="#Deteccion">
+                <li>Detección dispositivos</li>
             </a>
-            <a href="#container">
-                <li>Reloj y Alarma Digitales</li>
+            <a href="#conexion">
+                <li>Estado de la conexión</li>
             </a>
-            <a href="#container">
-                <li>Reloj y Alarma Digitales</li>
+            <a href="#webyaudio">
+                <li>Webcam</li>
             </a>
             <a href="#container">
                 <li>Reloj y Alarma Digitales</li>
@@ -51,10 +52,14 @@
                 <audio id="beep"
                        src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav">
                 </audio>
+                <div>
                 <button id="Start">Inicia Reloj</button>
                 <button id="Stop">Detiene Reloj</button>
+            </div>
+            <div>
                 <button id="StartAlarm">Inicia Alarma</button>
                 <button id="StopAlarm">Detiene Alarma</button>
+            </div>
             </div>
         </article>
 
@@ -78,14 +83,52 @@
         </article>
         <article id="ResponsiveJS">
             <h2>DISEÑO RESPONSIBLE CON JS</h2>
+            <div class="responsibility">
             <div id="youtube"></div>
             <div id="map"></div>
+        </div>
+        </article>
+        <article id="ResponsiveTester">
+            <h2>Responsive Tester</h2>
+         
+                <fieldset>
+                    <legend>Probemos la web</legend>
+                    <input type="text" name="uri-web" id="uri-web" placeholder="Introduce la uri" required/><br>
+                    <input type="number" name="res-x" id="res-x" placeholder="Introduce ancho" required/><br>
+                    <input type="number" name="res-y" id="res-y" placeholder="Introduce altura" required/><br>
+                    <button type="submit" id="btn-probe" >Probar</button></button><button id="btn-close">Cerrar</button>
+                </fieldset>
+         
+        </article>
+        <article id="Deteccion">
+            <h2>Detección de Dispositivos</h2>
+            <h3>(User Agent)</h3>
+            <h4 id="userA"></h4>
+         
+        </article>
+        <article id="conexion">
+            <h2>Detección del estado de la conexión.</h2>
+          
+            <h3 id="estado"class="mensaje"></h3>
+         
+        </article>
+        <article id="webyaudio">
+            <h2>conexion de video y audio</h2>
+            <h3 id="error_webcam"></h3>
+            <div id="webcam">                
+            <video witdh="640" height="480" id="webcamVideo"></video>
+        </div>
+        <div class="botonera">
+            <button type="button" id="play"name="play">Play</button>
+            <button type="button" id="stop"name="stop">Stop</button>
+            
+        </div>
         </article>
     </main>
-    <hr />
+
     <div class="botonDesactivado" id="boton">Menú</div>
     <div class="boton2 oculto" id="boton2">UP</div>
     <div class="dark-theme-btn" id="boton3">DARK</div>
-    <script src="./js/hamburger.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
 </body>
 </html>

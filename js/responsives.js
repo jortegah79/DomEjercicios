@@ -9,7 +9,7 @@ export default function responsiveMedia(id,mquery,mobileContent,desktopContent){
    }else{
     d.getElementById(id).innerHTML=mobileContent;
    }
-   console.log(e.matches)
+  
 }
 
 breakpoint.addListener(responsive);
