@@ -61,6 +61,7 @@ p {
 .menu {
     position: fixed;    
     width:100vw;
+    overflow-y: auto;
     background-color: rgba(060, 060, 060, 0.93);
     transition: all 0.5s ease;
     transform: translateX(0);

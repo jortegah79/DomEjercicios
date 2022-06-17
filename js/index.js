@@ -5,6 +5,7 @@ import {nueva_ventana,cerrar} from "./responsiveTester.js";
 import userDeviceInfo from "./deteccion_dispositivos.js";
 import connStatus from "./connectionStatus.js";
 import {muestraWebcam,detieneWebcam} from "./webcam.js";
+import gioLocalizacion from "./glocalizacion.js";
 
 /***********************Botón 1 ----Menú*************************************** */
 
@@ -138,9 +139,11 @@ d.addEventListener("keydown", (e) => {
 /***********************cuenta atras y reposonsible responsive************************************* */
 
 d.addEventListener("DOMContentLoaded",()=>{
-  temporizador("countdown","txt-countdown",'2023-1-14 8:0:0',"El programador ninja les desea ¡¡¡¡¡SUERTE EN LOS EXÁMENES!!!!");
+  temporizador("countdown","txt-countdown",'2023-1-1 0:0',"El programador ninja les desea ¡¡¡FELIZ AÑO NUEVO!!!");
   responsiveMedia("youtube","(min-width:1024px)",`<a href="https://www.youtube.com/embed/5k2DWMRTXMM" noopener noreferrer target="_blank">Ir al video</a>`,`<iframe width="600" height="350" src="https://www.youtube.com/embed/5k2DWMRTXMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`);
   responsiveMedia("map","(min-width:1024px)",`<a href="https://goo.gl/maps/abYCiW65uprrBSLGA" noopener noreferrer target="_blank">Ir al mapa</a>`,`<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.6711244945695!2d2.017773615683429!3d41.31601760837904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49cf18b64c017%3A0x6fc52cfd5c30c223!2sAyuntamiento%20de%20Viladecans!5e0!3m2!1ses!2ses!4v1655286803598!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`);
+ gioLocalizacion('geoResult');
+
 }) 
 /******************modo oscuro************************************************** */
 
