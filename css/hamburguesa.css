@@ -232,7 +232,7 @@ fieldset{
     margin :0 auto;
     padding:30px;
     }
-fieldset input{
+ input{
     width:90%;
     height:30px;
     font-size:20px;
@@ -258,12 +258,37 @@ color:#fff;
 }
 #webcam{
     padding:10px;
-   
-   
-
-    
 }
+.cards{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin:auto;
+}
+.card{
+    margin:50px;
+    min-width:350px;
+    width:1fr;
+    font-size:22px;
+    visibility:visible;
+    transition:all 0.2s linear;
+   
+}
+.card img{
+  width:100%;
+}
+.card figcaption{
+    font-size:22px;
+}
+#searching{
+    width:400px;
+}
+.ocultado{
+    visibility:hidden;
+    order:1;
 
+}
 @media screen and (max-width:1024px) {
     #boton2{
         right:14vw;

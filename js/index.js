@@ -6,6 +6,7 @@ import userDeviceInfo from "./deteccion_dispositivos.js";
 import connStatus from "./connectionStatus.js";
 import {muestraWebcam,detieneWebcam} from "./webcam.js";
 import gioLocalizacion from "./glocalizacion.js";
+import handleText from "./buscaElementos.js";
 
 /***********************Botón 1 ----Menú*************************************** */
 
@@ -188,5 +189,8 @@ d.addEventListener("DOMContentLoaded",()=>{
     }
     
   })
+ /***************************************BÚSQUEDAS RÁPIDAS********************************************************************* */
+    handleText(".card");
+ 
 
  
