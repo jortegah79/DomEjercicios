@@ -8,7 +8,7 @@ export default function handleText(clase){
     d.addEventListener("keyup",(e)=>{         
     if(e.key==="Escape")console.log(e.target.value);
     carta.forEach(x=>{
-    if(!x.textContent.toLowerCase().includes(e.target.value.toLowerCase() ) ){
+    if(!x.textContent.toLowerCase().includes(e.target.value.toLowerCase())){
          x.classList.add("ocultado");
    }else{
     x.classList.remove("ocultado");
